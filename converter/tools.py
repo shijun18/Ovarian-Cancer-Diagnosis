@@ -47,15 +47,15 @@ def statistic_slice_num(input_path, csv_path):
 if __name__ == "__main__":
     
     # Part-1: make label csv file
-    # os.makedirs('./csv_file')
+    os.makedirs('./csv_file')
 
-    # input_path = os.path.abspath('../dataset/npy_data/')
-    # csv_path = './csv_file/index.csv'
-    # make_label_csv(input_path,csv_path)
+    input_path = os.path.abspath('../dataset/npy_data/')
+    csv_path = './csv_file/index.csv'
+    make_label_csv(input_path,csv_path)
     
     
     # Part-2: Count the slice number
-    input_path = os.path.abspath('../dataset/npy_data/')
-    csv_path = './csv_file/slice_number.csv'
-    statistic_slice_num(input_path,csv_path)
+    # input_path = os.path.abspath('../dataset/npy_data/')
+    # csv_path = './csv_file/slice_number.csv'
+    # statistic_slice_num(input_path,csv_path)
     
