@@ -67,7 +67,7 @@ if __name__ == "__main__":
         ###### modification for new data
         csv_path = './converter/csv_file/index.csv'
         label_dict = csv_reader_single(csv_path, key_col='id', value_col='label')
-        path_list = list(label_dict.keys())*20
+        path_list = list(label_dict.keys())
 
         if args.mode == 'train-cross':
             for fold in range(1,FOLD_NUM+1):
